@@ -5,6 +5,24 @@ type Item={
     category:string,
     score:number,
 }
+const styles=[
+    {
+        backgroundColor: '#ff575717',
+        color:'var(--color-Light-red)',
+    },
+    {
+        backgroundColor: '#ffb11f25',
+        color:'var(--color-Orangey-yellow)',
+    },
+    {
+        backgroundColor: '#00bd9110',
+        color:'var(--color-Green-teal)',
+    },
+    {
+        backgroundColor: '#1124d415',
+        color:'var(--color-Cobalt-blue)',
+    }
+]
 function Summary(){
     const [items,setItems]=useState<Item[]>([]);
     useEffect(()=>{
@@ -16,24 +34,6 @@ function Summary(){
             setItems(data);
         })
     },[])
-    const styles=[
-        {
-            backgroundColor: '#ff575717',
-            color:'var(--color-Light-red)',
-        },
-        {
-            backgroundColor: '#ffb11f25',
-            color:'var(--color-Orangey-yellow)',
-        },
-        {
-            backgroundColor: '#00bd9110',
-            color:'var(--color-Green-teal)',
-        },
-        {
-            backgroundColor: '#1124d415',
-            color:'var(--color-Cobalt-blue)',
-        }
-    ]
     return(
        <div className="p-7 flex flex-col justify-center w-full gap-4  ">
         <h2 className="text-xl font-bold text-dark-gray-blue">
