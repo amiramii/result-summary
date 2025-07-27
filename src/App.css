@@ -1,0 +1,28 @@
+@import "tailwindcss";
+@import url('https://fonts.googleapis.com/css2?family=Hanken+Grotesk:ital,wght@0,100..900;1,100..900&display=swap');
+@layer base {
+    button:not(:disabled),
+    [role="button"]:not(:disabled) {
+      cursor: pointer;
+    }
+}
+@theme{
+   --color-dark-gray-blue:hsl(224, 30%, 27%);
+   --default-font-family:'Hanken Grotesk';
+   --color-light-slate-blue:hsl(252, 100%, 67%);
+   --color-light-royal-blue: hsl(241, 81%, 54%);
+   --color-Light-red: hsl(0, 100%, 67%);
+   --color-Orangey-yellow: hsl(39, 100%, 56%);
+   --color-Green-teal: hsl(166, 100%, 37%);
+   --color-Cobalt-blue: hsl(234, 85%, 45%);
+   --color-Pale-blue: hsl(221, 100%, 96%);
+   --color-Light-lavender: hsl(241, 100%, 89%);
+}
+@layer utilities {
+  .bg-hero{
+    background-image: linear-gradient(to bottom,hsl(252, 100%, 67%),hsl(241, 81%, 54%));
+  }
+  .bg-circle{
+    background-image: linear-gradient(to bottom,hsla(256, 72%, 46%, 1) ,hsla(241, 72%, 46%, 0) 90% );
+  }
+}
