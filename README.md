@@ -25,11 +25,12 @@ Users should be able to:
 
 ### Screenshot
 
-![](./screenshot.jpg)
+![desktop](image.png)
+![mobile](image-1.png)
 
 ### Links
 
-- Solution URL: [ solution URL ](https://your-solution-url.com)
+- Solution URL: [ solution URL ](https://github.com/amiramii/result-summary.git)
 - Live Site URL: [ live site URL ](https://your-live-site-url.com)
 
 ## My process
